@@ -14,13 +14,8 @@ struct QRCodeScannerExampleView: View {
     var body: some View {
             ZStack {
                 if let scannedCode = self.scannedCode {
-                    // NavigationLink("Next page", destination: NextView(scannedCode: scannedCode!), isActive: .constant(true)).hidden()
-                    //Text("scanCode ; \(scannedCode)")
-                    
-//                    MyWebview(urlToLoad: scannedCode)
                     Text("scanCode : \(scannedCode)")
                 } else {
-//                    MyWebview(urlToLoad: "https://m.dhlottery.co.kr/")
                     Text("scanCode : 하단 버튼을 이용하여 코드 가져오기")
                 }
                 

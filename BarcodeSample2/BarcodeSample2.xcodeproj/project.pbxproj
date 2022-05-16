@@ -7,24 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5672DAC128320D44008E9D81 /* BarcodeSample1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DA9928320D43008E9D81 /* BarcodeSample1App.swift */; };
-		5672DAC528320D44008E9D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5672DA9B28320D44008E9D81 /* Assets.xcassets */; };
-		5672DAD628321A2F008E9D81 /* QRCodeScannerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */; };
-		5672DAD928321A45008E9D81 /* QRCodeGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */; };
-		5672DADD28321A88008E9D81 /* CodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DADC28321A88008E9D81 /* CodeScanner.swift */; };
+		566F9968283230D100460307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F9967283230D100460307 /* AppDelegate.swift */; };
+		566F996A283230D100460307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F9969283230D100460307 /* SceneDelegate.swift */; };
+		566F996C283230D100460307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F996B283230D100460307 /* ViewController.swift */; };
+		566F996F283230D100460307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566F996D283230D100460307 /* Main.storyboard */; };
+		566F9971283230D100460307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566F9970283230D100460307 /* Assets.xcassets */; };
+		566F9974283230D100460307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566F9972283230D100460307 /* LaunchScreen.storyboard */; };
+		56DA2AAE283312040020F0EC /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA2AAD283312040020F0EC /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5672DA9928320D43008E9D81 /* BarcodeSample1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeSample1App.swift; sourceTree = "<group>"; };
-		5672DA9B28320D44008E9D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5672DAA028320D44008E9D81 /* BarcodeSample1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeSample1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerExampleView.swift; sourceTree = "<group>"; };
-		5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGuideView.swift; sourceTree = "<group>"; };
-		5672DADC28321A88008E9D81 /* CodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeScanner.swift; sourceTree = "<group>"; };
+		566F9964283230D100460307 /* BarcodeSample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeSample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566F9967283230D100460307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		566F9969283230D100460307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		566F996B283230D100460307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		566F996E283230D100460307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566F9970283230D100460307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		566F9973283230D100460307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		566F9975283230D100460307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56DA2AAD283312040020F0EC /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5672DA9D28320D44008E9D81 /* Frameworks */ = {
+		566F9961283230D100460307 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,78 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5672DA9328320D43008E9D81 = {
+		566F995B283230D100460307 = {
 			isa = PBXGroup;
 			children = (
-				5672DA9828320D43008E9D81 /* Shared */,
-				5672DAA128320D44008E9D81 /* Products */,
+				566F9966283230D100460307 /* BarcodeSample2 */,
+				566F9965283230D100460307 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5672DA9828320D43008E9D81 /* Shared */ = {
+		566F9965283230D100460307 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5672DADB28321A88008E9D81 /* QRCodeScanner */,
-				5672DA9928320D43008E9D81 /* BarcodeSample1App.swift */,
-				5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */,
-				5672DA9B28320D44008E9D81 /* Assets.xcassets */,
-				5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		5672DAA128320D44008E9D81 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5672DAA028320D44008E9D81 /* BarcodeSample1.app */,
+				566F9964283230D100460307 /* BarcodeSample2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5672DADB28321A88008E9D81 /* QRCodeScanner */ = {
+		566F9966283230D100460307 /* BarcodeSample2 */ = {
 			isa = PBXGroup;
 			children = (
-				5672DADC28321A88008E9D81 /* CodeScanner.swift */,
+				566F9967283230D100460307 /* AppDelegate.swift */,
+				566F9969283230D100460307 /* SceneDelegate.swift */,
+				566F996B283230D100460307 /* ViewController.swift */,
+				566F996D283230D100460307 /* Main.storyboard */,
+				566F9970283230D100460307 /* Assets.xcassets */,
+				566F9972283230D100460307 /* LaunchScreen.storyboard */,
+				566F9975283230D100460307 /* Info.plist */,
+				56DA2AAD283312040020F0EC /* ScanViewController.swift */,
 			);
-			path = QRCodeScanner;
+			path = BarcodeSample2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5672DA9F28320D44008E9D81 /* BarcodeSample1 (iOS) */ = {
+		566F9963283230D100460307 /* BarcodeSample2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5672DAC928320D44008E9D81 /* Build configuration list for PBXNativeTarget "BarcodeSample1 (iOS)" */;
+			buildConfigurationList = 566F998E283230D100460307 /* Build configuration list for PBXNativeTarget "BarcodeSample2" */;
 			buildPhases = (
-				5672DA9C28320D44008E9D81 /* Sources */,
-				5672DA9D28320D44008E9D81 /* Frameworks */,
-				5672DA9E28320D44008E9D81 /* Resources */,
+				566F9960283230D100460307 /* Sources */,
+				566F9961283230D100460307 /* Frameworks */,
+				566F9962283230D100460307 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "BarcodeSample1 (iOS)";
-			productName = "BarcodeSample1 (iOS)";
-			productReference = 5672DAA028320D44008E9D81 /* BarcodeSample1.app */;
+			name = BarcodeSample2;
+			productName = BarcodeSample2;
+			productReference = 566F9964283230D100460307 /* BarcodeSample2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5672DA9428320D43008E9D81 /* Project object */ = {
+		566F995C283230D100460307 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					5672DA9F28320D44008E9D81 = {
+					566F9963283230D100460307 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 5672DA9728320D43008E9D81 /* Build configuration list for PBXProject "BarcodeSample1" */;
+			buildConfigurationList = 566F995F283230D100460307 /* Build configuration list for PBXProject "BarcodeSample2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +113,64 @@
 				en,
 				Base,
 			);
-			mainGroup = 5672DA9328320D43008E9D81;
-			productRefGroup = 5672DAA128320D44008E9D81 /* Products */;
+			mainGroup = 566F995B283230D100460307;
+			productRefGroup = 566F9965283230D100460307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5672DA9F28320D44008E9D81 /* BarcodeSample1 (iOS) */,
+				566F9963283230D100460307 /* BarcodeSample2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5672DA9E28320D44008E9D81 /* Resources */ = {
+		566F9962283230D100460307 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5672DAC528320D44008E9D81 /* Assets.xcassets in Resources */,
+				566F9974283230D100460307 /* LaunchScreen.storyboard in Resources */,
+				566F9971283230D100460307 /* Assets.xcassets in Resources */,
+				566F996F283230D100460307 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5672DA9C28320D44008E9D81 /* Sources */ = {
+		566F9960283230D100460307 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5672DADD28321A88008E9D81 /* CodeScanner.swift in Sources */,
-				5672DAD628321A2F008E9D81 /* QRCodeScannerExampleView.swift in Sources */,
-				5672DAC128320D44008E9D81 /* BarcodeSample1App.swift in Sources */,
-				5672DAD928321A45008E9D81 /* QRCodeGuideView.swift in Sources */,
+				566F996C283230D100460307 /* ViewController.swift in Sources */,
+				566F9968283230D100460307 /* AppDelegate.swift in Sources */,
+				566F996A283230D100460307 /* SceneDelegate.swift in Sources */,
+				56DA2AAE283312040020F0EC /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		566F996D283230D100460307 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566F996E283230D100460307 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		566F9972283230D100460307 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566F9973283230D100460307 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		5672DAC728320D44008E9D81 /* Debug */ = {
+		566F998C283230D100460307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,16 +221,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		5672DAC828320D44008E9D81 /* Release */ = {
+		566F998D283230D100460307 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,105 +275,97 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5672DACA28320D44008E9D81 /* Debug */ = {
+		566F998F283230D100460307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NYKGEX3NH4;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용 필요";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = BarcodeSample2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hankooktech.BarcodeSample11;
-				PRODUCT_NAME = BarcodeSample1;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hankooktech.BarcodeSample2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		5672DACB28320D44008E9D81 /* Release */ = {
+		566F9990283230D100460307 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NYKGEX3NH4;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용 필요";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = BarcodeSample2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hankooktech.BarcodeSample11;
-				PRODUCT_NAME = BarcodeSample1;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hankooktech.BarcodeSample2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5672DA9728320D43008E9D81 /* Build configuration list for PBXProject "BarcodeSample1" */ = {
+		566F995F283230D100460307 /* Build configuration list for PBXProject "BarcodeSample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5672DAC728320D44008E9D81 /* Debug */,
-				5672DAC828320D44008E9D81 /* Release */,
+				566F998C283230D100460307 /* Debug */,
+				566F998D283230D100460307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		5672DAC928320D44008E9D81 /* Build configuration list for PBXNativeTarget "BarcodeSample1 (iOS)" */ = {
+		566F998E283230D100460307 /* Build configuration list for PBXNativeTarget "BarcodeSample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5672DACA28320D44008E9D81 /* Debug */,
-				5672DACB28320D44008E9D81 /* Release */,
+				566F998F283230D100460307 /* Debug */,
+				566F9990283230D100460307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5672DA9428320D43008E9D81 /* Project object */;
+	rootObject = 566F995C283230D100460307 /* Project object */;
 }

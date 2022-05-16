@@ -140,17 +140,26 @@ public struct CodeScannerView: UIViewControllerRepresentable {
             view.backgroundColor = UIColor.black
             captureSession = AVCaptureSession()
 
-            guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
+            guard let videoCaptureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else { return }
             let videoInput: AVCaptureDeviceInput
  
             do {
-                // 라이트 키는거네...
-                //if (videoCaptureDevice.hasTorch) {
-                  //  try videoCaptureDevice.lockForConfiguration()
-                  //  videoCaptureDevice.torchMode = .on
-                  //  try videoCaptureDevice.setTorchModeOn(level: AVCaptureDevice.maxAvailableTorchLevel)
-                  //  videoCaptureDevice.unlockForConfiguration()
-                //}
+                // NOTE:
+                // 4k 버퍼를 요청하면 더 작은 텍스트를 인식 할 수 있지만 더 많은 전력을 소비합니다.
+                // 유지하는 데 필요한 가장 작은 버퍼 크기를 사용하십시오.
+                // 다운 배터리 사용량.
+                if videoCaptureDevice.supportsSessionPreset(.hd4K3840x2160) { // 4K를 지원하는 카메라는 4K를 사용한다.
+                    captureSession.sessionPreset = AVCaptureSession.Preset.hd4K3840x2160
+                } else {    // 아니면 일반크기
+                    captureSession.sessionPreset = AVCaptureSession.Preset.hd1920x1080
+                }
+                
+                // 매우 작은 텍스트에 집중할 수 있도록 줌 및 자동 초점을 설정합니다.
+//                try videoCaptureDevice.lockForConfiguration()
+//                videoCaptureDevice.videoZoomFactor = 2 // 장치에서 캡처 한 이미지의 자르기 및 확대를 제어하는 ​​값입니다. 클수록 확대 2 까지 가능 // 2배 확대
+//                videoCaptureDevice.autoFocusRangeRestriction = .near
+//                videoCaptureDevice.unlockForConfiguration()
+                
                 videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
             } catch {
                 return
@@ -167,7 +176,10 @@ public struct CodeScannerView: UIViewControllerRepresentable {
 
             if (captureSession.canAddOutput(metadataOutput)) {
                 captureSession.addOutput(metadataOutput)
-
+                
+                // 비디오 데이터 출력을 구성합니다.
+                metadataOutput.connection(with: AVMediaType.video)?.preferredVideoStabilizationMode = .off
+                
                 metadataOutput.setMetadataObjectsDelegate(delegate, queue: DispatchQueue.main)
                 metadataOutput.metadataObjectTypes = delegate?.parent.codeTypes
             } else {
