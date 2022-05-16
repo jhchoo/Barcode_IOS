@@ -17,6 +17,12 @@
 		5672DAC428320D44008E9D81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DA9A28320D43008E9D81 /* ContentView.swift */; };
 		5672DAC528320D44008E9D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5672DA9B28320D44008E9D81 /* Assets.xcassets */; };
 		5672DAC628320D44008E9D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5672DA9B28320D44008E9D81 /* Assets.xcassets */; };
+		5672DAD628321A2F008E9D81 /* QRCodeScannerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */; };
+		5672DAD728321A2F008E9D81 /* QRCodeScannerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */; };
+		5672DAD928321A45008E9D81 /* QRCodeGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */; };
+		5672DADA28321A45008E9D81 /* QRCodeGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */; };
+		5672DADD28321A88008E9D81 /* CodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DADC28321A88008E9D81 /* CodeScanner.swift */; };
+		5672DADE28321A88008E9D81 /* CodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DADC28321A88008E9D81 /* CodeScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		5672DAB928320D44008E9D81 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5672DABD28320D44008E9D81 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5672DABF28320D44008E9D81 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerExampleView.swift; sourceTree = "<group>"; };
+		5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGuideView.swift; sourceTree = "<group>"; };
+		5672DADC28321A88008E9D81 /* CodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +106,12 @@
 		5672DA9828320D43008E9D81 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5672DADB28321A88008E9D81 /* QRCodeScanner */,
 				5672DA9928320D43008E9D81 /* BarcodeSample1App.swift */,
 				5672DA9A28320D43008E9D81 /* ContentView.swift */,
 				5672DA9B28320D44008E9D81 /* Assets.xcassets */,
+				5672DAD528321A2F008E9D81 /* QRCodeScannerExampleView.swift */,
+				5672DAD828321A45008E9D81 /* QRCodeGuideView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -139,6 +151,14 @@
 				5672DABF28320D44008E9D81 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5672DADB28321A88008E9D81 /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				5672DADC28321A88008E9D81 /* CodeScanner.swift */,
+			);
+			path = QRCodeScanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5672DADD28321A88008E9D81 /* CodeScanner.swift in Sources */,
 				5672DAC328320D44008E9D81 /* ContentView.swift in Sources */,
+				5672DAD628321A2F008E9D81 /* QRCodeScannerExampleView.swift in Sources */,
 				5672DAC128320D44008E9D81 /* BarcodeSample1App.swift in Sources */,
+				5672DAD928321A45008E9D81 /* QRCodeGuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5672DADE28321A88008E9D81 /* CodeScanner.swift in Sources */,
 				5672DAC428320D44008E9D81 /* ContentView.swift in Sources */,
+				5672DAD728321A2F008E9D81 /* QRCodeScannerExampleView.swift in Sources */,
 				5672DAC228320D44008E9D81 /* BarcodeSample1App.swift in Sources */,
+				5672DADA28321A45008E9D81 /* QRCodeGuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +423,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -449,6 +477,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -466,6 +496,7 @@
 				DEVELOPMENT_TEAM = W33H96C7PY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용 필요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -496,6 +527,7 @@
 				DEVELOPMENT_TEAM = W33H96C7PY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용 필요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
