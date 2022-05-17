@@ -8,7 +8,6 @@
 import UIKit
 import Vision
 import AVFoundation
-import SafariServices
 
 class ScanViewController: UIViewController {
     // MARK: - Private Variables
