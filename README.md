@@ -6,7 +6,7 @@
  - 손상된 바코드 X
 
 ## BarcodeSample2
-- 한타 delivery 앱에서 사용되는 QR
+- sample 앱에서 사용되는 QR
  - 손상된 바코드 X
 
 ## BarcodeSample3
